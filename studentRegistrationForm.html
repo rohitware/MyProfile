@@ -1,135 +1,168 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Registration Form</title>
-  </head>
 
-  <body>
-    <h3>Student Registration Form</h3>
-    <form>
-      <table>
-        <tbody>
-          <tr>
-            <td><label>First Name</label></td>
-            <td>
-              <input
-                type="text"
-                placeholder="Capital letters please"
-                required
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label>Last Name</label></td>
-            <td><input type="text" /></td>
-          </tr>
+<head>
+  <title>Registration Form</title>
+  <style>
+    label {
+      color: cadetblue;
+    }
 
-          <tr>
-            <td><label> Mobile Number</label></td>
-            <td><input type="number" placeholder="Max 10 digits" /></td>
-          </tr>
+    input[type="text"], input[type="number"] {
+      color: cadetblue;
+      border: 1px solid rgb(212, 111, 78) ;
+      width: 200px;
+      height: 25;
+      border-radius: 20px;
+      text-transform: capitalize;
+    }
+    button:hover{
+      background: brown;
+    }
+    button[type="submit"]{
+      border-radius: 1px;
+      color: rgb(77, 57, 57);
+      width: 80px;
+      height: 25;      
+    }
 
-          <tr>
-            <td><label>Email</label></td>
-            <td><input type="email" placeholder="Ex.abc@email.com" /></td>
-          </tr>
+    button[type="reset"]{
+      border-radius: 1px;
+      color: rgb(77, 57, 57);
+      width: 80px;
+      height: 25;   
+    }
+    
+  </style>
+</head>
 
-          <tr>
-            <td><label>Password</label></td>
-            <td><input type="password" /></td>
-          </tr>
+<body>
+  <h3>Student Registration Form</h3>
+  <form>
+    <table>
+      <tbody>
+        <tr>
+          <td><label>First Name</label></td>
+          <td>
+            <input type="text" placeholder="Capital letters please" required />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Last Name</label></td>
+          <td><input type="text" /></td>
+        </tr>
 
-          <tr>
-            <td><label>Date of Birth</label></td>
-            <td><input type="date" /></td>
-          </tr>
+        <tr>
+          <td><label> Mobile Number</label></td>
+          <td><input type="number" placeholder="Max 10 digits" /></td>
+        </tr>
 
-          <tr>
-            <td><lable>Available in week</lable></td>
-            <td><input type="week" /></td>
-          </tr>
+        <tr>
+          <td><label>Email</label></td>
+          <td><input type="email" placeholder="Ex.abc@email.com" /></td>
+        </tr>
 
-          <tr>
-            <td><lable>Available in Time</lable></td>
-            <td><input type="time" /></td>
-          </tr>
+        <tr>
+          <td><label>Password</label></td>
+          <td><input type="password" /></td>
+        </tr>
 
-          <tr>
-            <td><label>Profile Photo</label></td>
-            <td><input type="file" /></td>
-          </tr>
+        <tr>
+          <td><label>Date of Birth</label></td>
+          <td><input type="date" /></td>
+        </tr>
 
-          <tr>
-            <td><label>Upload Graduation Marksheets</label></td>
-            <td><input type="file" multiple /></td>
-          </tr>
+        <tr>
+          <td>
+            <lable>Available in week</lable>
+          </td>
+          <td><input type="week" /></td>
+        </tr>
 
-          <tr>
-            <td><label>Graduation</label></td>
-            <td>
-              <select>
-                <option>BE</option>
-                <option>MCA</option>
-                <option>BCA</option>
-                <option>MCM</option>
-                <option>BCS</option>
-                <option>BBA</option>
-                <option>Msc</option>
-              </select>
-            </td>
-          </tr>
+        <tr>
+          <td>
+            <lable>Available in Time</lable>
+          </td>
+          <td><input type="time" /></td>
+        </tr>
 
-          <tr>
-            <td>Select Gender</td>
-            <td>
-              <input type="radio" name="gender" /><label>Male</label>
-              <input type="radio" name="gender" /><label>Female</label>
-              <input type="radio" name="gender" /><label>Others</label>
-            </td>
-          </tr>
+        <tr>
+          <td><label>Profile Photo</label></td>
+          <td><input type="file" /></td>
+        </tr>
 
-          <tr>
-            <td>Select Training</td>
-            <td>
-              <input type="checkbox" /><label>Angular</label>
-              <input type="checkbox" /><label>React</label>
-              <input type="checkbox" /><label>Java</label>
-              <input type="checkbox" /><label>Data Science</label>
-              <input type="checkbox" /><label>Automation Testing</label>
-            </td>
-          </tr>
+        <tr>
+          <td><label>Upload Graduation Marksheets</label></td>
+          <td><input type="file" multiple /></td>
+        </tr>
 
-          <tr>
-            <td><label>Age</label></td>
-            <td><input type="number" placeholder="Only Numbers" /></td>
-          </tr>
+        <tr>
+          <td><label>Graduation</label></td>
+          <td>
+            <select>
+              <option>BE</option>
+              <option>MCA</option>
+              <option>BCA</option>
+              <option>MCM</option>
+              <option>BCS</option>
+              <option>BBA</option>
+              <option>Msc</option>
+            </select>
+          </td>
+        </tr>
 
-          <tr>
-            <td><label>State</label></td>
-            <td><input type="text" value="MH" readonly /></td>
-          </tr>
+        <tr>
+          <td>Select Gender</td>
+          <td>
+            <input type="radio" name="gender" /><label>Male</label>
+            <input type="radio" name="gender" /><label>Female</label>
+            <input type="radio" name="gender" /><label>Others</label>
+          </td>
+        </tr>
 
-          <tr>
-            <td><label>Country</label></td>
-            <td><input type="text" value="IND" disabled /></td>
-          </tr>
+        <tr>
+          <td>Select Training</td>
+          <td>
+            <input type="checkbox" /><label>Angular</label>
+            <input type="checkbox" /><label>React</label>
+            <input type="checkbox" /><label>Java</label>
+            <input type="checkbox" /><label>Data Science</label>
+            <input type="checkbox" /><label>Automation Testing</label>
+          </td>
+        </tr>
 
-          <tr>
-            <td><label>Address</label></td>
-            <td><textarea rows="6" cols="29"></textarea></td>
-          </tr>
+        <tr>
+          <td><label>Age</label></td>
+          <td><input type="number" placeholder="Only Numbers" /></td>
+        </tr>
 
-          <tr>
-            <td><input type="submit" /></td>
-            <td><input type="reset" /></td>
-          </tr>
+        <tr>
+          <td><label>State</label></td>
+          <td><input type="text" value="MH" readonly /></td>
+        </tr>
 
-          <tr>
-            <td><button type="submit">Register</button></td>
-            <td><button type="reset">Clear</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </form>
-  </body>
+        <tr>
+          <td><label>Country</label></td>
+          <td><input type="text" value="IND" disabled /></td>
+        </tr>
+
+        <tr>
+          <td><label>Address</label></td>
+          <td><textarea rows="6" cols="29"></textarea></td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" /></td>
+          <td><input type="reset" /></td>
+        </tr>
+
+        <tr>
+          <td><button type="submit">Register</button></td>
+          <td><button type="reset">Clear</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</body>
+
 </html>
